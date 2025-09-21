@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Example: run the JAR (replace with your real deploy step)
-                sh 'nohup java -jar target/*.jar &'
+                sh 'java -jar target/*.jar'
             }
         }
     }
